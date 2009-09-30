@@ -39,7 +39,7 @@ Twitter.
 %package -n %{develname}
 
 Summary: Development libraries and headers for twitter-glib
-Group: Development/Libraries
+Group: Development/C
 
 Requires: %{name} = %{version}-%{release}
 Requires: pkgconfig
