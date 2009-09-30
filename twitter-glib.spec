@@ -68,11 +68,11 @@ Documentation for twitter-glib
 
 %build
 ./autogen.sh --prefix=/usr --enable-gtk-doc
-make %{?_smp_mflags}
+%make
 
 %install
 rm -rf %{buildroot}
-make install DESTDIR=$RPM_BUILD_ROOT INSTALL="%{__install} -p"
+%makeinstall_std
 
 mkdir -p %{buildroot}/%{_datadir}/doc/%{name}-%{version}
 for f in `ls %{buildroot}/%{_datadir}/doc/`; do
