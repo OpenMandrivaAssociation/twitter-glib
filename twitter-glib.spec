@@ -65,9 +65,11 @@ Documentation for twitter-glib
 %setup -q -n twitter-glib-0.9.8git20090728
 %patch0 -p0
 %patch1 -p0
+perl -pi -e 's,^./configure.*,,' ./autogen.sh
 
 %build
-./autogen.sh --prefix=/usr --enable-gtk-doc
+./autogen.sh
+%configure2_5x --enable-gtk-doc
 %make
 
 %install
