@@ -4,7 +4,7 @@
 
 Name: twitter-glib
 Summary: Twitter library
-Group: Development/Libraries
+Group: System/Libraries
 Version: 0.9.8
 License: LGPLv2.1
 URL: http://live.gnome.org/TwitterGlib
