@@ -15,6 +15,7 @@ BuildRequires: libjson-glib-devel
 BuildRequires: libsoup-2.4-devel
 BuildRequires: libgdk_pixbuf2.0_0-devel
 BuildRequires: gtk-doc
+BuildRequires: gir-repository
 
 %description
 Twitter-GLib uses LibSoup to access the RESTful API exposed by Twitter, and JSON-GLib to parse the JSON data streams returned by Twitter. 
