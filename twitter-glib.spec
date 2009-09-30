@@ -53,7 +53,7 @@ Development environment for twitter-glib
 %package doc
 
 Summary: Documentation for twitter-glib
-Group: Development/Libraries
+Group: Development/Other
 
 Requires: %{name} = %{version}-%{release}
 Requires: gtk-doc
