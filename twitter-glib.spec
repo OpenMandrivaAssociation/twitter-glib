@@ -19,6 +19,7 @@ BuildRequires: libjson-glib-devel
 BuildRequires: libsoup-2.4-devel
 BuildRequires: libgdk_pixbuf2.0_0-devel
 BuildRequires: gtk-doc
+BuildRequires: gobject-introspection-devel
 BuildRequires: gir-repository
 
 %description
