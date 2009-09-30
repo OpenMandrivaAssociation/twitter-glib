@@ -22,14 +22,18 @@ BuildRequires: gtk-doc
 BuildRequires: gir-repository
 
 %description
-Twitter-GLib uses LibSoup to access the RESTful API exposed by Twitter, and JSON-GLib to parse the JSON data streams returned by Twitter. 
+Twitter-GLib uses LibSoup to access the RESTful API exposed by
+Twitter, and JSON-GLib to parse the JSON data streams returned by
+Twitter.
 
 %package -n %{libname}
-Summary:	Twitter libraries
-Group:		System/Libraries
+Summary: Twitter libraries
+Group: System/Libraries
 
 %description -n %{libname}
-Twitter-GLib uses LibSoup to access the RESTful API exposed by Twitter, and JSON-GLib to parse the JSON data streams returned by Twitter. 
+Twitter-GLib uses LibSoup to access the RESTful API exposed by
+Twitter, and JSON-GLib to parse the JSON data streams returned by
+Twitter.
 
 %package -n %{develname}
 
