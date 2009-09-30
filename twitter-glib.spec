@@ -11,12 +11,10 @@ Patch1: twitter-glib-0.9.8git20090728-timegm.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires: libglib2.0-devel
-BuildRequires: moblin-json-glib-devel
+BuildRequires: libjson-glib-devel
 BuildRequires: libsoup-2.4-devel
 BuildRequires: libgdk_pixbuf2.0_0-devel
 BuildRequires: gtk-doc
-
-Requires: moblin-json-glib
 
 %description
 Twitter-GLib uses LibSoup to access the RESTful API exposed by Twitter, and JSON-GLib to parse the JSON data streams returned by Twitter. 
