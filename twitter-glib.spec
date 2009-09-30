@@ -1,3 +1,7 @@
+%define major		0
+%define libname		%mklibname %{name} %{major}
+%define develname	%mklibname %{name} -d
+
 Name: twitter-glib
 Summary: Twitter library
 Group: Development/Libraries
@@ -20,7 +24,14 @@ BuildRequires: gir-repository
 %description
 Twitter-GLib uses LibSoup to access the RESTful API exposed by Twitter, and JSON-GLib to parse the JSON data streams returned by Twitter. 
 
-%package devel
+%package -n %{libname}
+Summary:	Twitter libraries
+Group:		System/Libraries
+
+%description -n %{libname}
+Twitter-GLib uses LibSoup to access the RESTful API exposed by Twitter, and JSON-GLib to parse the JSON data streams returned by Twitter. 
+
+%package -n %{develname}
 
 Summary: Development libraries and headers for twitter-glib
 Group: Development/Libraries
@@ -31,7 +42,7 @@ Requires: glib2-devel
 Requires: moblin-json-glib-devel
 Requires: %{name} >= %{version}
 
-%description devel
+%description -n %{develname}
 Development environment for twitter-glib
 
 %package doc
@@ -69,12 +80,12 @@ done
 %clean
 rm -rf %{buildroot}
 
-%files
+%files -n %{libname}
 %defattr(-,root,root,-)
 %exclude %{_libdir}/*.la
-%{_libdir}/libtwitter-glib-1.0.so.*
+%{_libdir}/libtwitter-glib-1.0.so.%{major}*
 
-%files devel
+%files -n %{develname}
 %defattr(-,root,root,-)
 %{_libdir}/libtwitter-glib-1.0.so
 %{_libdir}/pkgconfig/twitter-glib-1.0.pc
