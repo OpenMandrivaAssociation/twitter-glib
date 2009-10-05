@@ -41,11 +41,11 @@ Twitter.
 Summary: Development libraries and headers for twitter-glib
 Group: Development/C
 
-Requires: %{name} = %{version}-%{release}
+Requires: %{libname} = %{version}-%{release}
 Requires: pkgconfig
 Requires: glib2-devel
 Requires: moblin-json-glib-devel
-Requires: %{name} >= %{version}
+Requires: %{libname} >= %{version}
 
 %description -n %{develname}
 Development environment for twitter-glib
@@ -55,9 +55,9 @@ Development environment for twitter-glib
 Summary: Documentation for twitter-glib
 Group: Development/Other
 
-Requires: %{name} = %{version}-%{release}
+Requires: %{libname} = %{version}-%{release}
 Requires: gtk-doc
-Requires: %{name} >= %{version}
+Requires: %{libname} >= %{version}
 
 %description doc
 Documentation for twitter-glib
