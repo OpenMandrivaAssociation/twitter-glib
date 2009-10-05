@@ -42,7 +42,6 @@ Summary: Development libraries and headers for twitter-glib
 Group: Development/C
 
 Requires: %{libname} = %{version}-%{release}
-Requires: pkgconfig
 
 %description -n %{develname}
 Development environment for twitter-glib
