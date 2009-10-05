@@ -45,7 +45,6 @@ Requires: %{libname} = %{version}-%{release}
 Requires: pkgconfig
 Requires: glib2-devel
 Requires: moblin-json-glib-devel
-Requires: %{libname} >= %{version}
 
 %description -n %{develname}
 Development environment for twitter-glib
@@ -57,7 +56,6 @@ Group: Development/Other
 
 Requires: %{libname} = %{version}-%{release}
 Requires: gtk-doc
-Requires: %{libname} >= %{version}
 
 %description doc
 Documentation for twitter-glib
