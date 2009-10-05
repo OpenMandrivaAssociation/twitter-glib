@@ -43,8 +43,6 @@ Group: Development/C
 
 Requires: %{libname} = %{version}-%{release}
 Requires: pkgconfig
-Requires: glib2-devel
-Requires: libjson-glib-devel
 
 %description -n %{develname}
 Development environment for twitter-glib
