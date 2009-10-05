@@ -8,7 +8,7 @@ Group: System/Libraries
 Version: 0.9.8
 License: LGPLv2.1
 URL: http://live.gnome.org/TwitterGlib
-Release: %mkrel 2
+Release: %mkrel 3
 Source0: twitter-glib-%{version}git20090728.tar.gz
 Patch0: twitter-glib-0.9.8git20090728-fix-asif.patch
 Patch1: twitter-glib-0.9.8git20090728-timegm.patch
@@ -44,7 +44,7 @@ Group: Development/C
 Requires: %{libname} = %{version}-%{release}
 Requires: pkgconfig
 Requires: glib2-devel
-Requires: moblin-json-glib-devel
+Requires: libjson-glib-devel
 
 %description -n %{develname}
 Development environment for twitter-glib
