@@ -37,7 +37,6 @@ Twitter, and JSON-GLib to parse the JSON data streams returned by
 Twitter.
 
 %package -n %{develname}
-
 Summary: Development libraries and headers for twitter-glib
 Group: Development/C
 
