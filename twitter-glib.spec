@@ -8,7 +8,7 @@ Group: System/Libraries
 Version: 0.9.8
 License: LGPLv2.1
 URL: http://live.gnome.org/TwitterGlib
-Release: %mkrel 4
+Release: %mkrel 5
 Source0: twitter-glib-%{version}git20090728.tar.gz
 Patch0: twitter-glib-0.9.8git20090728-fix-asif.patch
 Patch1: twitter-glib-0.9.8git20090728-timegm.patch
@@ -20,7 +20,6 @@ BuildRequires: libsoup-2.4-devel
 BuildRequires: libgdk_pixbuf2.0-devel
 BuildRequires: gtk-doc
 BuildRequires: gobject-introspection-devel
-BuildRequires: gir-repository
 
 %description
 Twitter-GLib uses LibSoup to access the RESTful API exposed by
