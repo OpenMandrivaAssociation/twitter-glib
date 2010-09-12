@@ -8,7 +8,7 @@ Group: System/Libraries
 Version: 0.9.8
 License: LGPLv2.1
 URL: http://live.gnome.org/TwitterGlib
-Release: %mkrel 5
+Release: %mkrel 6
 Source0: twitter-glib-%{version}git20090728.tar.gz
 Patch0: twitter-glib-0.9.8git20090728-fix-asif.patch
 Patch1: twitter-glib-0.9.8git20090728-timegm.patch
