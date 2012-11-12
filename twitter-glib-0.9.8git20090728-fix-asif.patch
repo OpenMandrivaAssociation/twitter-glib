@@ -1,0 +1,16 @@
+--- configure.ac.old	2009-09-28 16:03:04.000000000 -0400
++++ configure.ac	2009-09-28 16:03:08.000000000 -0400
+@@ -142,8 +142,10 @@
+               [],
+               [enable_maintainer_flags=maintainer_flags_default])
+ 
+-AS_IF([test "x$enable_maintainer_flags" = "xyes" && test "x$GCC" = "xyes"]
+-      [TWITTER_MAINTAINER_CFLAGS="-Werror -Wall -Wshadow -Wcast-align -Wno-uninitialized -Wempty-body -Wformat-security -Winit-self"]
++AS_IF([test "x$enable_maintainer_flags" = "xyes" && test "x$GCC" = "xyes"],
++      [
++       TWITTER_MAINTAINER_CFLAGS="-Werror -Wall -Wshadow -Wcast-align -Wno-uninitialized -Wempty-body -Wformat-security -Winit-self"
++       ]
+ )
+ 
+ AC_SUBST(TWITTER_MAINTAINER_CFLAGS)
+
